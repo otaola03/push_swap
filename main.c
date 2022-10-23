@@ -6,7 +6,7 @@
 /*   By: jperez <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 18:56:35 by jperez            #+#    #+#             */
-/*   Updated: 2022/10/22 13:24:51 by jperez           ###   ########.fr       */
+/*   Updated: 2022/10/23 13:32:14 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ int	main(int argc, char **argv)
 		destroy_stacks(stack_a, stack_b, 2);
 	if (stack_a->len > 5)
 		ft_assing_index(stack_a);
+	//ft_run_list(stack_a);
 	push_swap(stack_a, stack_b);
 	destroy_stacks(stack_a, stack_b, 0);
 	return (0);

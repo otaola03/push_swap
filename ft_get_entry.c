@@ -6,7 +6,7 @@
 /*   By: jperez <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 20:55:49 by jperez            #+#    #+#             */
-/*   Updated: 2022/10/21 18:10:05 by jperez           ###   ########.fr       */
+/*   Updated: 2022/10/23 13:07:41 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_get_multiple_entry(char **argv, t_Stack *stack)
 {
 	while (*argv)
-		ft_push(stack, ft_atoi(*(argv++), stack));
+		ft_get_single_entry(*(argv++), stack);
 }
 
 int	ft_get_single_entry(char *argv, t_Stack *stack)

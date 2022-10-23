@@ -6,7 +6,7 @@
 /*   By: jperez <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 14:45:06 by jperez            #+#    #+#             */
-/*   Updated: 2022/10/21 20:04:10 by jperez           ###   ########.fr       */
+/*   Updated: 2022/10/23 14:03:30 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_atoi(const char *str, t_Stack *stack)
 			sign = -1;
 	while ('0' <= *str && *str <= '9')
 		num = num * 10 + (*str++ - '0');
-	if (!(INT_MIN <= num && num <= INT_MAX))
+	if (!(INT_MIN <= num * sign && num * sign <= INT_MAX))
 	{
 		write(2, "Error\n", 6);
 		destroy_stack(stack);
