@@ -6,7 +6,7 @@
 /*   By: jperez <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 18:56:35 by jperez            #+#    #+#             */
-/*   Updated: 2022/10/29 09:43:50 by jperez           ###   ########.fr       */
+/*   Updated: 2022/11/01 16:48:37 by jperez           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int argc, char **argv)
 	end = 0;
 	if (argc < 2 || ft_checkout(argc, ++argv) != 0)
 	{	
-		if (argc > 2)
+		if (argc >= 2)
 			write(2, "Error\n", 6);
 		exit(-1);
 	}
